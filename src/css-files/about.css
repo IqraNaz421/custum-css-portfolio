@@ -1,0 +1,111 @@
+/* About Page Container */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    background-size: 40px 40px;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(75, 0, 130, 0.05) 25%, transparent 25%,
+     transparent 50%, rgba(75, 0, 130, 0.05) 50%);
+}
+
+/* About Card */
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.3), 0 10px 40px rgba(255, 20, 147, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: scale(1.02);
+}
+
+/* About Image */
+.about-image {
+    width: 180px;
+    height: 180px;
+    background-image: url('/images/me.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.about-image:hover {
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.3);
+    transform: scale(1.05);
+}
+
+/* About Title */
+.about-title {
+    font-size: 2.8rem;
+    color: purple;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-title:hover {
+    color: purple;
+    transform: scale(1.05);
+}
+
+/* About Description */
+.about-description {
+    font-size: 1.15rem;
+    color: purple;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Explore Button */
+.explore-button {
+    background-color: purple;
+    color: #ffffff;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.explore-button:hover {
+    background-color: purple;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(58, 0, 110, 0.2);
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        padding: 2rem;
+    }
+
+    .about-title {
+        font-size: 2.2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}

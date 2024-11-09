@@ -1,0 +1,177 @@
+
+
+
+.hero {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(135deg, rgba(75, 0, 130, 0.1) 25%, transparent 25%, transparent 50%, rgba(75, 0, 130, 0.1) 50%);
+    background-size: 40px 40px;
+    padding: 8rem 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    background-image: url('https://your-image-url.com');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInCard 1s ease-out;
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.3), 0 10px 40px rgba(255, 20, 147, 0.3);
+}
+
+.hero-content:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.3), 0 10px 40px rgba(110, 20, 255, 0.3); 
+
+} 
+
+.hero-image {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.hero-image:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.3); /* Purple shadow */
+
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: purple;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: fadeInTitle 1s ease-out;
+}
+
+.hero-title:hover {
+    color:purple;
+    transform: scale(1.08);
+}
+
+.hero-description {
+    font-size: 1.4rem;
+    color: purple;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.8;
+}
+
+.explore-button {
+    background-color: purple;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explore-button:hover {
+    background-color: purple;
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.explore-button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+    }
+
+    .explore-button {
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .explore-button {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Add Animation for Title */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add Animation for Card */
+@keyframes fadeInCard {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

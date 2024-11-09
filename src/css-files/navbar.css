@@ -1,0 +1,83 @@
+
+
+
+   .navbar {
+    background-color: #f3f4f6;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    color: purple;
+    text-decoration: none;
+}
+
+.brand-text {
+    margin-left: 0.75rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+/* Hamburger button styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: purple;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: purple;
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default in mobile */
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        background-color: #f3f4f6;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.open {
+        display: flex; /* Show menu when open class is applied */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon in mobile view */
+    }
+}

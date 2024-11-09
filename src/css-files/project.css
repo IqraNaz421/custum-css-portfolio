@@ -1,0 +1,116 @@
+/* Projects Container */
+.projects-container {
+    padding: 4rem 2rem;
+    background-color: #f3f3f3;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(75, 0, 130, 0.05) 25%, transparent 25%, transparent 50%, rgba(75, 0, 130, 0.05) 50%);
+
+}
+
+/* Projects Title */
+.projects-title {
+    font-size: 3rem;
+    color: purple;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Project Card */
+.project-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.3), 0 10px 40px rgba(255, 20, 147, 0.3);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Project Content */
+.project-content {
+    padding: 1.5rem;
+}
+
+/* Project Name */
+.project-name {
+    font-size: 1.5rem;
+    color: purple;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.project-name:hover {
+    color: purple;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    color: purple;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    color: purple;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid purple;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: purple;
+    color: #ffffff;
+}
+
+.project-link svg {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2.5rem;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,90 @@
+/* General Footer Styling */
+.footer {
+    background-color: white;
+    color: #3c3c3c;
+    text-align: center;
+    padding: 20px 0; /* Reduced padding */
+    border-top: 5px solid purple;
+    position: relative;
+    margin-top: 20px;  /* Adding margin to separate from content above */
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 16px;
+    margin: 10px 0;
+    color: purple;
+}
+
+.footer-text:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0; /* Reduced margin */
+    flex-wrap: wrap;  /* Ensures icons wrap on smaller screens if needed */
+}
+
+.footer-icon {
+    font-size: 30px;
+    margin: 0 15px; /* Keep margin between icons */
+    color: purple;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    color: #6a0dad; /* Purple shade */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px; /* Reduced padding further */
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;  /* Smaller gap between icons */
+    }
+
+    .footer-icon {
+        font-size: 28px;  /* Slightly smaller icons */
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px 5px;  /* Further reduced padding */
+    }
+
+    .footer-text {
+        font-size: 12px;  /* Smaller text size */
+    }
+
+    .footer-icons {
+        flex-direction: row; /* Keep icons horizontal */
+        justify-content: center;
+    }
+
+    .footer-icon {
+        font-size: 24px;  /* Slightly smaller icons */
+        margin: 0 10px;  /* Adjust spacing between icons */
+    }
+}

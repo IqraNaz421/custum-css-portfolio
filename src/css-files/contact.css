@@ -1,0 +1,120 @@
+/* contact.css */
+
+.contact-page {
+    background-color: #ffffff;
+    background-image:
+    linear-gradient(135deg, rgba(75, 0, 130, 0.05) 25%, transparent 25%,
+    transparent 50%, rgba(75, 0, 130, 0.05) 50%);
+    background-size: 40px 40px;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: purple;
+    
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: purple;
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: purple;
+  }
+  
+  .contact-form {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.3), 0 10px 40px rgba(255, 20, 147, 0.3);
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: purple;
+    font-size: 1.2rem;
+  }
+  
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: purple;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus, .form-textarea:focus {
+    border-color:  purple;
+    outline: none;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .submit-button {
+    background-color: purple;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: purple;
+    transform: scale(1.05);
+  }
+  
+  .submit-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-description {
+      font-size: 1rem;
+    }
+  
+    .contact-form {
+      padding: 1.5rem;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+    }
+  }
+  
