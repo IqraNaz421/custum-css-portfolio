@@ -1,10 +1,11 @@
-import AboutPage from '@/components/About'
+
 import React from 'react'
+import About from '@/components/About'
 
 const page = () => {
   return (
     <div>
-      <AboutPage/>
+      <About/>
     </div>
   )
 }

@@ -2,6 +2,7 @@
 import React from 'react';
 import "../css-files/hero.css"
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -9,7 +10,7 @@ const Hero: React.FC = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <img src="/images/me.jpg" alt="Your Name" className="hero-image" />
+        <Image src="/images/me.jpg" alt="Your Name" width={500} height={500} className="hero-image" />
         <h1 className="hero-title">IQRA NAZ</h1>
         <p className="hero-description">
           I am a passionate web developer skilled in crafting responsive visually appealing websites

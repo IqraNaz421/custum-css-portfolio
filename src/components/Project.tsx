@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css-files/project.css"
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
@@ -56,7 +57,7 @@ const Project: React.FC = () => {
             <div className="projects-grid">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
-                        <img src={project.image} alt={project.title} className="project-image" />
+                        <Image src={project.image} alt={project.title} width={100} height={100} className="project-image" />
                         <div className="project-content">
                             <h3 className="project-name">{project.title}</h3>
                             <p className="project-description">{project.description}</p>
